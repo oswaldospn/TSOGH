@@ -1,0 +1,245 @@
+
+
+body{
+	background-image: linear-gradient(#fe1a00, #3d94f6);
+}
+
+form fieldset {
+   margin: 0px auto 0px auto;
+   width: 18%;
+   padding: 1%;
+   border: none;
+} 
+
+form input {
+   width: 100%;
+   border: solid #00000 3px;
+   font-size: 35px;
+   margin-bottom: -1px;
+   background-color:#00000;
+}
+
+
+.func {
+   width: 30%;  
+   font-size: 25px;
+   margin: -605px;
+
+}
+.glub{
+  width: 50%;  
+  font-size: 25px;
+  padding-left: 500px;
+  padding-right: 200px;
+
+}
+
+
+.flex {
+	display:flex;
+
+}
+.flex-item-1{
+	flex:1;
+}
+.item {
+	margin-left: 110px;
+	margin-right: 50px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background: black;
+	font color: white;
+	font-size: 35px;
+
+}
+
+
+.num {
+	
+	align-self: center;
+	float: left;
+    margin: 10px 5px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0) );
+	background:-moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
+	background-color:#3d94f6;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	border:1px solid #3d6399;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Courier New;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:149px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #1570cd;
+}
+.num:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6) );
+	background:-moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');
+	background-color:#1e62d0;
+}.num:active {
+	position:relative;
+	top:1px;
+
+}
+.num1 {
+	
+	
+	float: center;
+    margin: 10px 165px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0) );
+	background:-moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
+	background-color:#3d94f6;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	border:1px solid #3d6399;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Courier New;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:149px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #1570cd;
+}
+.num:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6) );
+	background:-moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');
+	background-color:#1e62d0;
+}.num:active {
+	position:relative;
+	top:1px;
+
+}
+/* This button was generated using CSSButtonGenerator.com */
+
+.oper {
+	float: left;
+    margin: 10px 5px;
+	-moz-box-shadow:inset 0px 0px 0px 0px #f29c93;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #f29c93;
+	box-shadow:inset 0px 0px 0px 0px #f29c93;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #cc2121) );
+	background:-moz-linear-gradient( center top, #fe1a00 5%, #cc2121 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#cc2121');
+	background-color:#fe1a00;
+	-webkit-border-top-left-radius:42px;
+	-moz-border-radius-topleft:42px;
+	border-top-left-radius:42px;
+	-webkit-border-top-right-radius:42px;
+	-moz-border-radius-topright:42px;
+	border-top-right-radius:42px;
+	-webkit-border-bottom-right-radius:42px;
+	-moz-border-radius-bottomright:42px;
+	border-bottom-right-radius:42px;
+	-webkit-border-bottom-left-radius:42px;
+	-moz-border-radius-bottomleft:42px;
+	border-bottom-left-radius:42px;
+	text-indent:0px;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Impact;
+	font-size:19px;
+	font-weight:bold;
+	font-style:normal;
+	height:53px;
+	line-height:53px;
+	width:104px;
+	text-decoration:right;
+	text-align:center;
+	text-shadow:1px 1px 0px #b23e35;
+	grid-row: 1/ span 2;
+	grid-column: 2;
+}
+.oper:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cc2121), color-stop(1, #fe1a00) );
+	background:-moz-linear-gradient( center top, #cc2121 5%, #fe1a00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc2121', endColorstr='#fe1a00');
+	background-color:#cc2121;
+}.oper:active {
+	position:center;
+	top:11111px;
+}
+/* This button was generated using CSSButtonGenerator.com */
+.box {
+  font-weight: bold;
+  font-size: 150%;
+  padding: 2px;
+  margin: 9px;
+
+
+}
+.a {
+  display: grid;
+  padding: 5px 50px 5px 5px;
+  background-color: grey;
+  grid-column: 1 / 2;
+  border: 3px solid #000;
+  width: 300px;
+  height: 80px;
+}
+.b {
+  display: grid;
+  padding: 5px 50px 5px 5px;
+  background-color: grey; 
+  grid-column: 1 / 2;
+  border: 3px solid #000;
+  width: 300px;
+}
+.c {
+  display: grid;
+  padding: 5px 50px 5px 5px;
+  background-color: grey; 
+  border: 3px solid #000;
+  width: 300px;
+  height: 400px;
+}
+.d {
+  display: grid;
+  padding: 5px 1px 5px 500px;
+  grid-row: 2
+  width: 300px;
+  height: 400px;
+  padding-left: 70px;
+}

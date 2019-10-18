@@ -1,0 +1,303 @@
+@prefix cin7601: <http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#> .
+
+cin7601:Volta_ao_Morro_Sul cin7601:tipoDeTransporte cin7601:Coletivo ;
+						   cin7601:categoria cin7601:Ônibus ;
+						   cin7601:temCapacidade 40 ;
+						   cin7601:temComoPreço 12 ;
+						   cin7601:temComoTrajeto "Circular em torno do Morro da Cruz" ;
+						   cin7601:emOperaçãoEm cin7601:Floripa ;
+						   cin7601:administradoPor cin7601:Empresa_BUS .
+
+cin7601:Topic_CDE_9876 cin7601:tipoDeTransporte cin7601:Coletivo ;
+					   cin7601:categoria cin7601:Lotação ;
+					   cin7601:temCapacidade 16 ;
+					   cin7601:temComoPreço 22 ;
+					   cin7601:temComoTrajeto "UFSC – Canasvieiras – UFSC" ;
+					   cin7601:emOperaçãoEm cin7601:Floripa ;
+					   cin7601:administradoPor cin7601:Empresa_SIMBORA .
+
+cin7601:Airbus_A_380 cin7601:tipoDeTransporte cin7601:Coletivo ;
+					 cin7601:categoria cin7601:Avião ;
+					 cin7601:temCapacidade 850 ;
+					 cin7601:temComoPreço 10000 ;
+					 cin7601:temComoTrajeto "Paris – Nova York - Paris" ;
+					 cin7601:emOperaçãoEm cin7601:Floripa ;
+					 cin7601:administradoPor cin7601:Empresa_VOANDO .
+
+cin7601:Transatlântico_001 cin7601:tipoDeTransporte cin7601:Coletivo ;
+						   cin7601:categoria cin7601:Barco ;
+						   cin7601:temCapacidade 8000 ;
+						   cin7601:temComoPreço 20000 ;
+				 		   cin7601:inicioOperações "2010-01-15" ;
+						   cin7601:temComoTrajeto "Rio de Janeiro – Buenos Aires – Rio de Janeiro" ;
+						   cin7601:emOperaçãoEm cin7601:Floripa ;
+						   cin7601:administradoPor cin7601:Empresa_MIRAGEM .
+
+cin7601:Embraer_145_abc  cin7601:tipoDeTransporte cin7601:Coletivo ;
+					 	 cin7601:categoria cin7601:Avião ;
+					     cin7601:temCapacidade 350 ;
+					     cin7601:temComoPreço 1200 ;
+					     cin7601:temComoTrajeto "Florianópolis – Brasília – Florianópolis" ;
+				 		 cin7601:inicioOperações "2008-08-05" ;
+						 cin7601:emOperaçãoEm cin7601:Floripa ;
+					     cin7601:administradoPor cin7601:Empresa_QUICANDO .
+
+cin7601:Concorde_Suersônico cin7601:tipoDeTransporte cin7601:Coletivo ;
+					 		cin7601:categoria cin7601:Avião ;
+					 		cin7601:temCapacidade 300 ;
+					 		cin7601:temComoPreço 30000 ;
+					 		cin7601:temComoTrajeto "Floripa – Estratosfera - Floripa" ;
+					 		cin7601:administradoPor cin7601:Empresa_LUZ ;
+							cin7601:emOperaçãoEm cin7601:Floripa ;
+					 		cin7601:inicioOperações "2018-10-26" .
+
+cin7601:Fiesta_ABC_1234 cin7601:tipoDeTransporte cin7601:Híbrido ;
+					 cin7601:categoria cin7601:Carro ;
+				     cin7601:temCapacidade 5 ;
+				     cin7601:temComoPreço 200 ;
+				     cin7601:temComoTrajeto "Centro – UFSC – Centro" ;
+					 cin7601:emOperaçãoEm cin7601:Floripa ;
+				     cin7601:administradoPor "José das Couves" .
+
+cin7601:Ônix_KHT_5678 cin7601:tipoDeTransporte cin7601:Híbrido ;
+					  cin7601:categoria cin7601:Carro ;
+				      cin7601:temCapacidade 5 ;
+				      cin7601:temComoPreço 35 ;
+				      cin7601:temComoTrajeto "Circular por qualquer ponto da Ilha de Santa Catarina" ;
+					  cin7601:emOperaçãoEm cin7601:Floripa ;
+				      cin7601:administradoPor "Gisela" .
+
+cin7601:Moto_XYZ_5678 cin7601:tipoDeTransporte cin7601:Particular ;
+					  cin7601:categoria cin7601:Moto ;
+				      cin7601:temCapacidade 2 ;
+				      cin7601:temComoPreço 10 ;
+					  cin7601:emOperaçãoEm cin7601:Floripa ;
+				      cin7601:administradoPor "Maricotinha" .
+
+cin7601:Bike_Amarela cin7601:tipoDeTransporte cin7601:Particular ;
+					 cin7601:categoria cin7601:Bicicleta ;
+				     cin7601:temCapacidade 1 ;
+				     cin7601:temComoPreço 3 ;
+					 cin7601:emOperaçãoEm cin7601:Floripa ;
+				     cin7601:administradoPor "Juquinha" .
+
+cin7601:BiciTaxi cin7601:tipoDeTransporte cin7601:Híbrido ;
+				 cin7601:categoria cin7601:Bicicleta ;
+				 cin7601:temCapacidade 3 ;
+				 cin7601:temComoPreço 8 ;
+				 cin7601:temComoTrajeto "Rodar pela cidade" ;
+				 cin7601:emOperaçãoEm cin7601:Floripa ;
+			     cin7601:administradoPor "Adenor" .
+
+cin7601:Patinete_Verde cin7601:tipoDeTransporte cin7601:Particular ;
+					   cin7601:categoria cin7601:Outro ;
+				       cin7601:temCapacidade 1 ;
+				       cin7601:temComoPreço 1 ;
+				       cin7601:temComoTrajeto "Levar você aonde você quiser." ;
+				       cin7601:administradoPor "Juliana" ;
+					   cin7601:emOperaçãoEm cin7601:Floripa ;
+			 		   cin7601:inicioOperações "2018-10-12" .
+
+cin7601:Empresa_BUS cin7601:nomeEmpresa "Transportes Rodoviários S/A" ;
+					cin7601:cnpj "123456789" ;
+					cin7601:cidadeMatriz "Florianópolis" ;
+					cin7601:endereço "Lorem ipsum" ;
+					cin7601:emOperaçãoEm cin7601:Floripa ;
+				    cin7601:dataFundação "2013-09-18" .
+
+cin7601:Empresa_VOANDO cin7601:nomeEmpresa "Floripa Linhas Aéreas" ;
+					   cin7601:cnpj "901234567" ;
+					   cin7601:cidadeMatriz "Florianópolis" ;
+					   cin7601:emOperaçãoEm cin7601:Floripa ;
+					   cin7601:endereço "Interdum hendrerit" .
+
+cin7601:Empresa_QUICANDO cin7601:nomeEmpresa "De Salto em Salto Chegamos Onde Queremos" ;
+					     cin7601:cnpj "xxxxx-465-qwer" ;
+					     cin7601:cidadeMatriz "Taguatinga" ;
+					  	 cin7601:emOperaçãoEm cin7601:Floripa ;
+					     cin7601:endereço "Donec sed eget dui leo nullam sapien" .
+
+cin7601:Empresa_OCA cin7601:nomeEmpresa "Puro Vento" ;
+					  	 cin7601:emOperaçãoEm cin7601:Floripa ;
+					     cin7601:cnpj "djksfbvhksfvbjfk-33" .
+
+cin7601:Empresa_SIMBORA cin7601:nomeEmpresa "Lotação Vamos que Vamos Ltda." ;
+						cin7601:cnpj "135792468" ;
+						cin7601:cidadeMatriz "Florianópolis" ;
+						cin7601:endereço "Lobortis sollicitudin" ;
+						cin7601:emOperaçãoEm cin7601:Floripa ;
+ 					    cin7601:dataFundação "2016-07-12" .
+
+cin7601:Empresa_MIRAGEM cin7601:nomeEmpresa "Baía Norte Navegação" ;
+						cin7601:cnpj "147036925" ;
+						cin7601:cidadeMatriz "Florianópolis" ;
+					  	cin7601:emOperaçãoEm cin7601:Floripa ;
+						cin7601:endereço "Consectetur pharetra" .
+
+cin7601:Empresa_MIRAGEM_SUL cin7601:nomeEmpresa "Que Miragem!" ;
+							cin7601:cnpj "9527XYZW-82" ;
+							cin7601:cidadeMatriz "Algum Lugar" ;
+					  		cin7601:emOperaçãoEm cin7601:Floripa ;
+							cin7601:endereço "Lá mesmo" .
+
+cin7601:Empresa_DELTA_DO_NILO cin7601:nomeEmpresa "Piramidal Empreendimentos" ;
+							  cin7601:cnpj "alkjy7543" ;
+							  cin7601:cidadeMatriz "Heliópolis" ;
+							  cin7601:endereço "Cinturão de Órion" ;
+							  cin7601:emOperaçãoEm cin7601:Floripa ;
+							  cin7601:dataFundação "2018-03-01" .
+
+cin7601:Empresa_LUZ cin7601:nomeEmpresa "No Topo do Mundo" ;
+					cin7601:cnpj "mnbbnv942635" ;
+					cin7601:emOperaçãoEm cin7601:Floripa ;
+					cin7601:cidadeMatriz "Shambalá" .
+
+cin7601:Empresa_OCULTA  cin7601:cnpj "hjghy763" ;
+						cin7601:cidadeMatriz "Onde exatamente?" ;
+						cin7601:endereço "É segredo!" ;
+					  	cin7601:emOperaçãoEm cin7601:Floripa ;
+ 					    cin7601:dataFundação "1950-06-14" .
+
+cin7601:Estudante_001	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Linked_Data ;
+						cin7601:posuiIAA 8 ;
+						cin7601:cursaFase 6 ;
+						cin7601:moraBairro "Tapera" ;
+						cin7601:utilizaTransporte cin7601:Airbus_A_380 .
+
+cin7601:Estudante_002	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Linked_Data ;
+						cin7601:posuiIAA 7.5 ;
+						cin7601:cursaFase 5 ;
+						cin7601:moraBairro "Rio Vermelho" ;
+						cin7601:utilizaTransporte cin7601:Ônix_KHT_5678 .
+
+cin7601:Estudante_003	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Linked_Data ;
+						cin7601:posuiIAA 8.5 ;
+						cin7601:cursaFase 3 ;
+						cin7601:moraBairro "Ingleses" ;
+						cin7601:utilizaTransporte cin7601:Ônix_KHT_5678 .
+
+cin7601:Estudante_004	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Linked_Data ;
+						cin7601:posuiIAA 9 ;
+						cin7601:cursaFase 4 ;
+						cin7601:moraBairro "Cachoeira do Bom Jesus" ;
+						cin7601:utilizaTransporte cin7601:Ônix_KHT_5678 .
+
+cin7601:Estudante_005	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Mineração_Texto ;
+						cin7601:posuiIAA 8.27 ;
+						cin7601:cursaFase 5 ;
+						cin7601:moraBairro "Daniela" ;
+						cin7601:utilizaTransporte cin7601:Transatlântico_001 .
+
+cin7601:Estudante_006	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Mineração_Texto ;
+						cin7601:posuiIAA 6 ;
+						cin7601:cursaFase 5 ;
+						cin7601:moraBairro "Pantanal" ;
+						cin7601:utilizaTransporte cin7601:Patinete_Verde .
+
+cin7601:Estudante_007	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Mineração_Texto ;
+						cin7601:posuiIAA 8.92 ;
+						cin7601:cursaFase 6 ;
+						cin7601:moraBairro "Trindade" ;
+						cin7601:utilizaTransporte cin7601:Patinete_Verde .
+
+cin7601:Estudante_008	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Mineração_Texto ;
+						cin7601:posuiIAA 8.92 ;
+						cin7601:cursaFase 6 ;
+						cin7601:moraBairro "Córrego Grande" ;
+						cin7601:utilizaTransporte cin7601:Embraer_145_abc .
+
+cin7601:Estudante_009	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Introdução_Algoritmos ;
+						cin7601:posuiIAA 9.5 ;
+						cin7601:cursaFase 8 ;
+						cin7601:moraBairro "Santa Mônica" ;
+						cin7601:utilizaTransporte cin7601:Topic_CDE_9876 .
+
+cin7601:Estudante_010	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Introdução_Algoritmos ;
+						cin7601:posuiIAA 9 ;
+						cin7601:cursaFase 7 ;
+						cin7601:moraBairro "Saco dos Limões" ;
+						cin7601:utilizaTransporte cin7601:Volta_ao_Morro_Sul .
+
+cin7601:Estudante_011	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Introdução_Algoritmos ;
+						cin7601:posuiIAA 8.1 ;
+						cin7601:cursaFase 6 ;
+						cin7601:moraBairro "Coqueiros" ;
+						cin7601:utilizaTransporte cin7601:Transatlântico_001 .
+
+cin7601:Estudante_012	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Introdução_Algoritmos ;
+						cin7601:posuiIAA 8.1 ;
+						cin7601:cursaFase 6 ;
+						cin7601:moraBairro "Abraão" ;
+						cin7601:utilizaTransporte cin7601:Concorde_Suersônico .
+
+cin7601:Estudante_013	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Introdução_Algoritmos ;
+						cin7601:posuiIAA 8.1 ;
+						cin7601:cursaFase 6 ;
+						cin7601:moraBairro "Palhoça - Centro" ;
+						cin7601:utilizaTransporte cin7601:Fiesta_ABC_1234 .
+
+cin7601:Estudante_014	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Introdução_Algoritmos ;
+						cin7601:posuiIAA 9 ;
+						cin7601:cursaFase 4 ;
+						cin7601:moraBairro "São José - Kobrasol" ;
+						cin7601:utilizaTransporte cin7601:BiciTaxi .
+
+cin7601:Estudante_015	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Introdução_Algoritmos ;
+						cin7601:posuiIAA 6.5 ;
+						cin7601:cursaFase 5 ;
+						cin7601:moraBairro "São José - Forquilinhas" ;
+						cin7601:utilizaTransporte cin7601:BiciTaxi .
+
+cin7601:Estudante_016	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Lógica_Aplicada_I ;
+						cin7601:posuiIAA 7.8 ;
+						cin7601:cursaFase 7 ;
+						cin7601:moraBairro "Biguaçu - Centro" ;
+						cin7601:utilizaTransporte cin7601:Moto_XYZ_5678 .
+
+cin7601:Estudante_017	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Lógica_Aplicada_I ;
+						cin7601:posuiIAA 9.3 ;
+						cin7601:cursaFase 8 ;
+						cin7601:moraBairro "Biguaçu - Centro" ;
+						cin7601:utilizaTransporte cin7601:Bike_Amarela .
+
+cin7601:Estudante_018	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Lógica_Aplicada_I ;
+						cin7601:posuiIAA 8.4 ;
+						cin7601:cursaFase 7 ;
+						cin7601:moraBairro "Santo Amaro da Imperatriz - Centro" ;
+						cin7601:utilizaTransporte cin7601:Bike_Amarela .
+
+cin7601:Estudante_019	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Lógica_Aplicada_I ;
+						cin7601:posuiIAA 8 ;
+						cin7601:cursaFase 6 ;
+						cin7601:moraBairro "Governador Celso Ramos - Centro" ;
+						cin7601:utilizaTransporte cin7601:Transatlântico_001 .
+
+cin7601:Estudante_020	cin7601:estuda "Ciência da Informação" ;
+						cin7601:cursaDisciplina cin7601:Linked_Data ;
+						cin7601:posuiIAA 7.5 ;
+						cin7601:cursaFase 3 ;
+						cin7601:moraBairro "Tijucas - Centro" ;
+						cin7601:utilizaTransporte cin7601:Patinete_Verde .
+
+
+
+

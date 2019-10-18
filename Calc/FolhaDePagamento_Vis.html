@@ -1,0 +1,48 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href='calc.css' />
+<script type="text/javascript"  src="calc.js"> 
+</script>
+<script type="text/javascript" src="troca_dados.js"></script>
+<title>folhaDePagamento</title>
+</head>
+<body onload="myFunction(criarTabela())">
+<script type="text/javascript"  src="tabela.js"> 
+</script>
+
+	  <section class="container flex">
+
+   
+      <div class="item flex-item1"  style= "border-width: medium;border-style: solid;border-color: grey;"><a href="calc.html"><font color=grey><b>Calculadora Visual 2.0 - Oswaldo</b></font></a></div> 
+      <div class="item flex-item1"  style= "border-width: medium;border-style: solid;border-color: grey;"><a href="FolhaDePagamento.html"><font color=grey>Folha de pagamento</font></a></div> 
+      <div class="item flex-item1"  style= "border-width: medium;border-style: solid;border-color: grey;"><a href="sobre.html"><font color=grey>Sobre</font></a></div>
+
+      
+    </section>
+
+
+  	<div class="cont" >
+
+   
+      <div class="box a" ><p><a href="FolhaDePagamento_Inc.html">Incluir funcionários.</a></p></div>
+      <form class="glub">
+      	
+ 		 <button type="button" class="botaoReceber" onclick="recuperarDados()" style="width: 700px; height:50px; font-size: 37px;">Incluir!</button>
+		<button type="button" style="width: 700px; height:50px; font-size: 37px;">Alterar!</button> 
+</form>
+
+
+	
+      <div class="box b"  style="background-color: tomato"><p><a href="FolhaDePagamento_Vis.html">Visualizar funcionários.</a></p></div>
+      <div class="box c" ><p></p></div>
+
+
+	
+
+
+		</div>
+	</div>
+	 <button class="bc" onclick="criarTabela(this)">Criar Tabela</button>
+ 	 <button class='bc'onclick="incluirLinha()">Criar Linha</button>
+</form>
+</html>

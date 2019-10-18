@@ -1,0 +1,49 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href='calc.css' />
+<script type="text/javascript"  src="calc.js"> 
+</script>
+<script type="text/javascript" src="troca_dados.js"></script>
+<title>folhaDePagamento</title>
+</head>
+<body>
+	  <section class="container flex">
+
+   
+      <div class="item flex-item1"  style= "border-width: medium;border-style: solid;border-color: grey;"><a href="calc.html"><font color=grey><b>Calculadora Visual 2.0 - Oswaldo</b></font></a></div> 
+      <div class="item flex-item1"  style= "border-width: medium;border-style: solid;border-color: grey;"><a href="FolhaDePagamento.html"><font color=grey>Folha de pagamento</font></a></div> 
+      <div class="item flex-item1"  style= "border-width: medium;border-style: solid;border-color: grey;"><a href="sobre.html"><font color=grey>Sobre</font></a></div>
+
+      
+    </section>
+
+
+  	<div class="cont" >
+
+   
+      <div class="box a"  style="background-color: tomato"><p><a href="FolhaDePagamento_Inc.html">Incluir funcionários.</a></p></div>
+      <div class="box b" ><p><a href="FolhaDePagamento_Vis.html">Visualizar funcionários.</a></p></div>
+  	  <div class="box c" ><p></p></div>
+
+	
+	  <div class="box d"><center><form class ="func" action="/action_page.php">
+	    <label class="label" for="label1">Nome:</label>
+		<input type="text" id="entrada1" name="entrada1"></br>
+        <label class="label" for="label2">Sobrenome:</label>
+		<input type="text" id="entrada2" name="entrada2"></br>
+        <label class="label" for="label3">Cargo:</label>
+		<input type="text" id="entrada3" name="entrada3"></br>
+        <label class="label" for="label4">E-mail:</label>
+		<input type="text" id="entrada4" name="entrada4"></br>
+        <label class="label" for="label5">Data de admissão:</label>
+		<input type="text" id="entrada5" name="entrada5"></br>
+        <label class="label" for="label6">Salário bruto(em R$):</label>
+		<input type="text" id="entrada6" name="entrada6"></br>
+		<label class="label" for="label7"> Descontos(em R$):</label>
+		<input type="text" id="entrada7" name="entrada6"></br>
+  		  <button type="button" class="botaoEnviar" onclick="salvarDados()" style="width: 190px; height:50px; font-size: 37px;">Incluir!</button></form></center>
+	  </div>
+
+	</div> 
+
+</html>

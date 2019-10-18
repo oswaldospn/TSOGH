@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <title>Calculadora Visual 2.0</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="wifth=device-width, initial-scale-1.0">
+<link rel="stylesheet" type="text/css" href='calc.css' />
+<script type="text/javascript"  src="calc.js"> 
+</script>
+</head>
+<body>
+
+
+<form name="calcform" method="post" action="">
+    <section class="container flex">
+
+   
+      <div class="item flex-item1"  style= "border-width: medium;border-style: solid;border-color: grey;background-color: tomato"><a href="calc.html"><font color=grey><b>Calculadora Visual 2.0 - Oswaldo</b></font></a></div> 
+      <div class="item flex-item1"  style= "border-width: medium;border-style: solid;border-color: grey;"><a href="FolhaDePagamento.html"><font color=grey>Folha de pagamento</font></a></div> 
+      <div class="item flex-item1"  style= "border-width: medium;border-style: solid;border-color: grey;"><a href="sobre.html"><font color=grey>Sobre</font></a></div>
+
+      
+    </section>
+      
+
+  <fieldset>
+   <tr>
+      <TD ALIGN="CENTER">
+       <input type="text" name="visor" class="visor" id="visor" />
+    </TD>
+ </tr>
+      
+
+           <section class="container flex">  
+            <div><input type="button" name="somar" class="oper" value="+" onclick="calcParse('somar')"></div>
+              
+            <div><input type="button" name="subtrair" class="oper" value="-" onclick="calcParse('subtrair')"></div>
+              
+            <div><input type="button" name="multiplicar" class="oper" value="*" onclick="calcParse('multiplicar')" ></div>
+              
+            <div><input type="button" name="dividir" class="oper" value="÷" onclick="calcParse('dividir')" ></div>
+          </section>
+       
+       
+          <section class="container flex">
+            <div><input type="button" name="num3" class="num" value="1" onclick="calcNum(1)" ></div>
+            <div><input type="button" name="num2" class="num" value="2" onclick="calcNum(2)" ></div>
+            <div><input type="button" name="num1" class="num" value="3" onclick="calcNum(3)" ></div>
+         </section>
+
+         <section class="container flex">
+            <div><input type="button" name="num9" class="num" value="4" onclick="calcNum(4)"  ></div>
+            <div><input type="button" name="num8" class="num" value="5" onclick="calcNum(5)"  ></div>
+            <div><input type="button" name="num7" class="num" value="6" onclick="calcNum(6)"  ></div>
+          </section>
+        <section class="container flex">
+            <div><input type="button" name="num6" class="num" value="7" onclick="calcNum(7)"></div>
+            <div><input type="button" name="num5" class="num" value="8" onclick="calcNum(8)"></div>
+            <div><input type="button" name="num4" class="num" value="9" onclick="calcNum(9)"></div>
+        </section>
+        <section class="container flex"> 
+            <div><input type="button" name="num0" class="num1" value="0" onclick="calcNum(0)" ></div>
+        </section>
+      
+         
+         <section class="container flex"> 
+            <div><input type="button" name="igual" class="num1" value="=" onclick="calcParse('resultado')"></div>
+          </section>
+      
+         
+         <section class="container flex"> 
+            <div><input type="button" name="limpar" class="num1" value="C" onclick="calcLimpar()"></div>
+         </section>
+      
+      
+      
+   </fieldset>
+</form>
+
+</body>
+</html>

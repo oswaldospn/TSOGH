@@ -1,0 +1,186 @@
+﻿EX 01
+PREFIX cin7601: 	<http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#>
+
+SELECT (count(?x) AS ?triplas)
+WHERE
+{
+	?x ?y ?z .
+}EX 02
+PREFIX cin7601: 	<http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#>
+
+SELECT (count(?x) AS ?triplas)
+WHERE
+{
+	?x cin7601:cnpj ?z .
+}
+EX 03
+PREFIX cin7601: 	<http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#>
+
+SELECT (count(?x) AS ?triplas)
+WHERE
+{
+	?x cin7601:estuda ?z .
+}
+EX 04
+PREFIX cin7601: 	<http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#>
+
+SELECT (count(DISTINCT?z) AS ?triplas)
+WHERE
+{
+	?x cin7601:cursaDisciplina ?z .
+}
+EX 05
+PREFIX cin7601: 	<http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#>
+
+SELECT ?estudante ?t
+WHERE
+{
+	
+	?estudante cin7601:utilizaTransporte ?t . 
+    ?t cin7601:categoria cin7601:Avião .
+}
+EX 06
+PREFIX cin7601: 	<http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#>
+
+SELECT ?estudante ?t
+WHERE
+{
+	
+	?estudante cin7601:utilizaTransporte ?t . 
+    ?t cin7601:categoria cin7601:Barco .
+}
+EX 07
+PREFIX cin7601: 	<http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#>
+
+SELECT ?estudante ?materia
+WHERE
+{
+	?estudante cin7601:utilizaTransporte  ?t . 
+    ?t cin7601:categoria cin7601:Barco .
+    ?estudante cin7601:cursaDisciplina ?materia .
+}
+EX 08
+PREFIX cin7601: 	<http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#>
+
+SELECT ?estudante ?t
+WHERE
+{
+	?estudante cin7601:utilizaTransporte  ?t . 
+    {?t cin7601:categoria cin7601:Carro . }
+    UNION
+    {?t cin7601:categoria cin7601:Lotação .}
+}
+EX09
+PREFIX cin7601: 	<http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#>
+
+SELECT ?estudante ?bairro
+WHERE
+{
+	?estudante cin7601:cursaDisciplina cin7601:Linked_Data  . 
+    ?ESTUDANTE cin7601:moraBairro ?bairro .
+    
+    
+}
+EX10
+PREFIX cin7601: 	<http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#>
+
+SELECT  (COUNT(?estudante) AS ?total_estudantes) 
+WHERE
+{
+	
+    ?estudante  cin7601:cursaDisciplina cin7601:Introdução_Algoritmos.
+    
+    
+}
+EX11(???????????????????????????????????????????????????????????????????????? )
+PREFIX cin7601:<http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#>
+
+SELECT (AVG(?iaaa) AS ?media_IAAA)
+WHERE
+{
+    ?estudante cin7601:cursaDisciplina cin7601:Introdução_Algoritmos .
+    ?estudante cin7601:possuiIAA ?iaaa .
+    
+}
+EX12
+PREFIX cin7601:<http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#>
+
+SELECT (COUNT(?estudante) AS ?total_estudantes_que_andam_de_bicicleta)
+WHERE
+{
+    ?estudante cin7601:utilizaTransporte ?t .
+    ?t cin7601:categoria cin7601:Bicicleta .
+    
+}
+EX13
+PREFIX cin7601:<http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#>
+
+SELECT (AVG(?iaa) AS ?média_iaa)
+WHERE
+{
+    ?estudante cin7601:utilizaTransporte ?t .
+    ?t cin7601:categoria cin7601:Bicicleta .
+    ?estudante cin7601:posuiIAA ?iaa .
+    
+}
+EX14
+PREFIX cin7601:<http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#>
+
+SELECT (sum(?iaa) AS ?soma_iaa)
+WHERE
+{
+    ?estudante cin7601:utilizaTransporte ?t .
+    ?t cin7601:categoria cin7601:Bicicleta .
+    ?estudante cin7601:posuiIAA ?iaa .
+    
+}
+EX15
+PREFIX cin7601:<http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#>
+
+SELECT (AVG(?iaa) AS ?média_iaa) ?transporte
+WHERE
+{
+    ?estudante cin7601:utilizaTransporte ?transporte .
+    ?estudante cin7601:posuiIAA ?iaa .
+    
+}
+GROUP BY ?transporte
+EX16
+PREFIX cin7601:<http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#>
+
+SELECT ?estudante ?empresa ?cidadeMatriz ?endereço
+WHERE
+{
+    ?estudante cin7601:utilizaTransporte ?transporte .
+    ?transporte cin7601:administradoPor ?empresa .
+    ?empresa cin7601:cidadeMatriz ?cidadeMatriz .
+    ?empresa cin7601:endereço ?endereço .
+    FILTER NOT EXISTS {?empresa cin7601:dataFundação ?data .}
+    
+}
+#OU
+PREFIX cin7601:<http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#>
+
+SELECT ?estudante ?empresa ?data ?cidadeMatriz ?endereço
+WHERE
+{
+    ?estudante cin7601:utilizaTransporte ?transporte .
+    ?transporte cin7601:administradoPor ?empresa .
+    ?empresa cin7601:cidadeMatriz ?cidadeMatriz .
+    ?empresa cin7601:endereço ?endereço .
+    OPTIONAL {?empresa cin7601:dataFundação ?data .}
+    
+}
+EX17
+
+PREFIX cin7601:<http://www.ufsc.br/cin7601/moises/datasets/2019/10/MeiosDeTransporte#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?estudante (xsd:float(xsd:float(?preço) * 4) AS ?total_diario)
+WHERE
+{
+    
+    ?estudante cin7601:cursaDisciplina cin7601:Mineração_Texto  .
+    ?estudante cin7601:utilizaTransporte ?transporte .
+    ?estudante cin7601:temComoPreço ?preço .
+    
+}
